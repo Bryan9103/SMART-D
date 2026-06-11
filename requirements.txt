@@ -1,0 +1,20 @@
+transformers
+
+numpy==1.26.4
+pyyaml
+httpx
+wandb
+pygame 
+Pillow
+vllm
+openai
+pandas
+matplotlib
+python-dotenv
+
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch
+torchvision
+
+#torch>=2.1,<3.0

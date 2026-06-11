@@ -1,0 +1,40 @@
+method: SMART-D
+layout: forced_coordination
+seed: 0
+run_name: ""
+save_dir: runs/SMART-D
+wandb_project: rltf-overcooked
+
+# environment
+n_envs: 8
+horizon: 400
+rollout_len: 400
+
+# training loop
+n_iter: 1875
+eval_interval: 50
+eval_episodes: 20
+
+# network
+hidden: 64
+
+# PPO
+lr: 3.0e-4
+gamma: 0.99
+gae_lambda: 0.95
+clip_eps: 0.2
+value_coef: 0.5
+entropy_coef: 0.01
+max_grad_norm: 0.5
+k_epochs: 4
+minibatch_size: 512
+
+# self-distillation
+lambda_sd_max: 0.1 # ramps from 0 to this over second half of training
+
+# LLM planner
+llm:
+  base_url: "http://localhost:8001/v1" # vLLM default port
+  model: "Qwen/Qwen2.5-1.5B-Instruct" # HuggingFace model name
+  temperature: 0.3
+  max_tokens: 100
