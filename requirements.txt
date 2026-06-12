@@ -1,4 +1,4 @@
-transformers >= 4.54.0
+transformers<4.54.0
 
 numpy==1.26.4
 pyyaml
@@ -6,7 +6,7 @@ httpx
 wandb
 pygame 
 Pillow
-vllm <= 0.10.0
+vllm>0.10.0
 openai
 pandas
 matplotlib
@@ -16,5 +16,3 @@ python-dotenv
 
 torch
 torchvision
-
-#torch>=2.1,<3.0
