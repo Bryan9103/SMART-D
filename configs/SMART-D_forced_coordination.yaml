@@ -34,7 +34,7 @@ lambda_sd_max: 0.1 # ramps from 0 to this over second half of training
 
 # LLM planner
 llm:
-  base_url: "http://localhost:8001/v1" # vLLM default port
+  base_url: "http://localhost:8020/v1" # vLLM default port
   model: "Qwen/Qwen2.5-1.5B-Instruct" # HuggingFace model name
   temperature: 0.3
   max_tokens: 100
