@@ -6,7 +6,7 @@ httpx
 wandb
 pygame 
 Pillow
-vllm>0.10.0
+vllm<0.10.0
 openai
 pandas
 matplotlib
