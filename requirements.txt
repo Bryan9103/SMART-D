@@ -1,12 +1,10 @@
-transformers<4.54.0
-
 numpy==1.26.4
 pyyaml
 httpx
 wandb
 pygame 
 Pillow
-vllm<0.10.0
+vllm
 openai
 pandas
 matplotlib
