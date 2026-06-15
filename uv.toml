@@ -1,0 +1,4 @@
+# Resolve each package's best version across all indexes, instead of uv's default
+# "first-index" (which would lock vllm to the stale 0.9.0.1 on the PyTorch cu128
+# extra-index declared in requirements.txt). See requirements.txt for context.
+index-strategy = "unsafe-best-match"
